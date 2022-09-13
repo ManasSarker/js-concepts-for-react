@@ -1,5 +1,5 @@
 //1. Map in an array
-
+// map will always return something
 const products = [
   { name: "laptop", price: 32000, brand: "lenevo", color: "silver" },
   { name: "phone", price: 12000, brand: "sony", color: "black" },
@@ -12,3 +12,17 @@ const products = [
 const showProducts = products.map((product) => product.name);
 
 console.log("My products are", showProducts);
+
+// ForEach function
+//ForEach function will not return anything
+products.forEach((product) => {
+  console.log("There name are ", product.name);
+  console.log("There price are ", product.price);
+  console.log("There colors are", product.color);
+});
+
+//3.Filer , this method is also return something ,If I want actually
+
+const result = products.filter((product) => product.price < 4000);
+
+console.log("For gorib people ", result);
