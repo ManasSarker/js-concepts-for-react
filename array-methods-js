@@ -1,0 +1,14 @@
+//1. Map in an array
+
+const products = [
+  { name: "laptop", price: 32000, brand: "lenevo", color: "silver" },
+  { name: "phone", price: 12000, brand: "sony", color: "black" },
+  { name: "watch", price: 3200, brand: "rolax", color: "golden" },
+  { name: "house", price: 300500, brand: "lonlon", color: "white" },
+  { name: "camera", price: 20000, brand: "DjI", color: "black" },
+  { name: "sunglas", price: 3200, brand: "ribon", color: "black" },
+];
+
+const showProducts = products.map((product) => product.name);
+
+console.log("My products are", showProducts);
